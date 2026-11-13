@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+  <link rel="stylesheet" href="./todo.css">
+  
+  </head>
+  <body>
+    <header>To do list</header>
+    
+    <main>
+      <h1> Tâche de gagner des points, chaque mission compte!</h1>
+      <form action="todolist">
+        <p>🏠 Je participe a la maison.</p>
+        <label><input type ="checkbox"  class="mission" data-points="5" value="1" </label> Ranger ma chambre et y passer l'aspirateur.<br>
+        <label><input type ="checkbox"  class="mission" data-points="5" value="2" </label> Ranger mes vêtements et mettre le sale au panier.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="3" </label> Aider à preparer un repas<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="4" </label> Je range le lave vaisselle.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="5" </label> Je prépare et débarrasse la table et met dans le lave-vaisselle.<br>
+        <p> 💪 Je deviens autonome.</p>
+        <label><input type="checkbox"  class="mission" data-points="5" value="6" </label> Préparer ma malette pour l'école.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="7" </label> Choisir et préparer mes vêtements. <br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="8" </label> Me brosser les dents matin et soir sans qu'on me le demande.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="9" </label> Je stop mes activités à 18h et je vais prendre ma douche,mettre mon pyjama.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="10" </label> Je range ce que j'utilise.<br>
+
+        <p>💖 je  prends soin des autres</p>
+  
+        <label><input type="checkbox"  class="mission" data-points="5" value="11" </label> Je donne à manger et à boire à mon animal.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="12" </label> J'aide ma maman dans la maison ( ménage, cuisine).<br>
+
+        <p> 📝Mon journal de bord</p>
+        <span class="xp-bonus">💥SUPER BONUS +25 XP</span>
+
+
+         <label><input type="checkbox"  class="mission" data-points="25" value="20" </label> J'exprime mes émotions et raconte ma journée dans mon journal intime.<br>
+
+       
+        <p> 🎒✏️ Je gère mes affaires</p>
+
+        <label><input type="checkbox"  class="mission" data-points="5" value="13" </label> Je lis 15 minutes un livre au choix <br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="15" </label> Je me pose une question et recherche la réponse de moi-même.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="16" </label> Je range mon manteau et mes chaussures que je rentre de l'extèrieur. <br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="17" </label> Je limite mon temps d'écran à 2h le weekend.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="18" </label> Je vais me coucher à 20h.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="19" </label> Je range mes affaires d'école aprés mes devoirs.<br>
+        <label><input type="checkbox"  class="mission" data-points="5" value="20" </label> Je révise mes leçons de la semaine le weekend pendant 1h.<br>
+        
+      </form>
+    </main>
+      <div class="barre-points">
+      <progress id="progression" value="0" max="100"></progress>
+      <span id="curseur">✨</span>
+      </div>
+    
+  </body>
+</html>

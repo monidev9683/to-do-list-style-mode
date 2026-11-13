@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+body {
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  background: url("img/todo\ girl\ fluo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+header {
+  border: 5px solid rgba(185, 24, 123, 0.699);
+  border-radius: 20px;
+  font-size: 4rem;
+  font-family: fantasy;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: bisque;
+  text-shadow:
+    0 0 5px purple,
+    0 0 15px purple;
+}
+h1 {
+  font-family: "bangers", cursive;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(233, 49, 162);
+}
+main {
+  border: 5px solid rgba(137, 23, 160, 0.699);
+  border-radius: 20px;
+  box-shadow: inset 6px 4px 20px 10px rgb(114, 6, 117);
+  background-color: rgba(190, 117, 160, 0.596);
+}
+
+form {
+  margin: 30px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.xp-bonus {
+  font-family: bangers, cursive;
+  font-size: 1, 5rem;
+}
+p {
+  color: rgb(33, 2, 53);
+  font-family: fredoka, cursive;
+  font-weight: 600;
+  margin: 20px;
+}
+.barre-points {
+  position: relative;
+  /* relative sr la div permet de repère au curseur */
+  width: 100%;
+  overflow: visible;
+  /* permet de depasser de la barre sans être coupée. */
+}
+#progression {
+  width: 100%;
+  height: 40xp;
+  accent-color: limegreen;
+  border: 2px solid white;
+  border-radius: 10%;
+}
+
+#curseur {
+  font-size: 50px;
+  position: absolute;
+  /* absolut permet au curseur de se positioner au dessus de la barre de progress */
+  left: 0;
+  /* left 0 permet au curseur de commencer a zero */
+  top: 50%;
+  /* le centre verticalement */
+  transform: translate(-50%, -50%);
+  /* width: 20px; */
+  /* height: 20px; */
+  box-shadow: 0 0 8px yellow 0 0 18px lime;
+  z-index: 2;
+  /* 2 la place devant le curseur */
+}
